@@ -1,0 +1,141 @@
+.cont-onecart:hover {
+  transform: scale(1.1);
+}
+.cont-onecart {
+  cursor: pointer;
+  position: relative;
+  width: 379px;
+  height: 95px;
+  border-radius: 8px;
+  display: flex;
+  background: #ffff;
+  gap: 20px;
+  align-items: center;
+  transition: all 0.2s;
+  .cart-remove:hover {
+    transform: scale(1.2);
+    color: #0f52ba;
+  }
+  .cart-remove {
+    position: absolute;
+    right: 0;
+    top: 0;
+    button {
+      background: #000000;
+      color: white;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .price-cart {
+    width: 62px;
+    height: 17px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    text-align: left;
+  }
+  span {
+    color: #000000;
+  }
+  .cont-qtd {
+    display: flex;
+    width: 50px;
+    gap: 20px;
+    
+
+    .qtd-inputs {
+      border: 1px solid #bfbfbf;
+      border-radius: 4px;
+      display: flex;
+    }
+
+    button {
+      width: 16px;
+      border: 0;
+      background: #ffff;
+    }
+
+    div {
+      color: #000000;
+      font-size: 7px;
+      font-weight: 400;
+      line-height: 6.1px;
+    }
+
+    input {
+      width: 16px;
+      border: 0;
+      font-size: 8px;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 9.75px;
+    }
+  }
+  h1 {
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    width: 113px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: 46px;
+    height: 57px;
+  }
+}
+@media (max-width: 600px) {
+  .cont-onecart {
+    height: 220px;
+    width: 250px;
+    flex-direction: column;
+    .cont-qtd {
+      width: 100%;
+      justify-content: center;
+      button {
+        width: 40px;
+        border: 0;
+        background: #ffff;
+      }
+    }
+    img {
+      width: 80px;
+      height: 95.1px;
+    }
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 211px;
+      height: 21.45px;
+
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+    }
+    .price-cart {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 17px;
+      height: 34.81px;
+      width: 84px;
+      background-color: #000000;
+      color: rgb(255, 255, 255);
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .qtd {
+    display: none;
+    gap: 20px;
+  }
+}

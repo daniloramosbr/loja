@@ -1,0 +1,103 @@
+$white: #ffffff;
+
+@mixin Flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont-onesection:hover {
+  transform: scale(1.2);
+  color: #0f52ba;
+}
+.cont-onesection {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  background: $white;
+  width: 218px;
+  height: 285px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px 0px #00000022;
+  justify-content: space-between;
+  transition: all 0.3s;
+  .cont-img {
+    @include Flex();
+   
+  }
+  .desc {
+    @include Flex();
+    padding: 0 15px;
+    span {
+      font-size: 10px;
+    }
+  }
+  img {
+    width: 120px;
+    height: 138px;
+
+  }
+  button:hover {
+    transform: scale(1.1);
+  }
+  button {
+    transition: all 0.3s;
+    display: flex;
+    background: #0f52ba;
+    color: $white;
+    border: 0;
+    width: 218px;
+    height: 31.91px;
+    gap: 5px;
+    border-radius: 5px;
+    @include Flex();
+    div {
+      @include Flex();
+      ion-icon {
+        font-size: 16px
+      }
+    }
+  }
+}
+.price {
+  @include Flex();
+  span {
+    width: 100px;
+  }
+  .title-prod {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    width: 124px;
+    height: 38px;
+  }
+  .price-span {
+    width: 64px;
+    height: 26px;
+    background: #2c2c2c;
+    color: $white;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    text-align: left;
+
+    @include Flex();
+  }
+ 
+}
+@media (max-width: 650px) {
+
+  .cont-onesection {
+    width:100%;
+   margin: 30px;
+   
+   
+    button {
+      width: 100%;
+    }
+   
+    
+  }
+
+}

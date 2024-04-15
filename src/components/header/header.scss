@@ -1,0 +1,78 @@
+@mixin Flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont-header {
+  display: flex;
+  justify-content: space-between;
+  height: 101px;
+  background-color: #0f52ba;
+  align-items: center;
+  color: #ffffff;
+  padding: 0 45px;
+  position: absolute;
+  width: 100%;
+  .header-title:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  .header-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s;
+    h1 {
+      font-size: 40px;
+    }
+    span {
+      font-size: 20px;
+    }
+  }
+}
+.cont-button:hover {
+  transform: scale(1.2);
+  color: #0f52ba;
+}
+.cont-button {
+  display: flex;
+  transition: all 0.2s;
+  button {
+    @include Flex();
+    width: 90px;
+    height: 45px;
+    border-radius: 8px;
+    gap: 10px;
+    border: 0;
+    span {
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21.94px;
+      text-align: left;
+    }
+  }
+  div {
+    @include Flex();
+    ion-icon {
+      font-size: 25px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .cont-header {
+    display: flex;
+    justify-content: space-evenly;
+    height: 48px;
+    background-color: #0f52ba;
+    align-items: center;
+    color: #ffffff;
+    padding: 0 0px;
+    position: relative;
+    width: 100%;
+  }
+  .cont-button {
+    width: 52px;
+   
+  }
+}
