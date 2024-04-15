@@ -1,6 +1,4 @@
-import { useEffect } from "react";
 import "./onecarrinho.scss";
-import { useState } from "react";
 import { useContext } from "react";
 import { ContextJsx } from "../../context/context";
 
