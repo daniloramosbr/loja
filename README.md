@@ -10,7 +10,7 @@ Projeto de uma loja Virtual com api, carrinho de compras etc....
 
 ## Stack utilizada
 
-*JavaScript, React, Sass, Axios, Api*
+*JavaScript, React, Sass, Axios, Vite, Api*
 
 ## Autores
 
