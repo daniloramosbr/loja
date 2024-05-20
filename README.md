@@ -1,6 +1,8 @@
 # Loja Virtual
 
-Projeto de uma loja Virtual com api, carrinho de compras etc....
+Projeto front-end de uma loja Virtual 
+
+<img src="/public/loja.png" alt="url">
 
 ## Funcionalidades
 
